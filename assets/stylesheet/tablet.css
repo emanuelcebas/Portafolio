@@ -92,3 +92,6 @@ nav.nav_menu.active {
     margin: 0 auto;
     width: 80%;
 }
+#mail{
+    opacity: 0;
+}
