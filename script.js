@@ -49,6 +49,19 @@ window.addEventListener('scroll', () => {
     });
 });
 
+/*===== Boton Enviar Contacto =====*/
+const $form = document.querySelector('#form')
+const $buttonMailto = document.querySelector('#mail')
+
+$form.addEventListener('submit', handleSubmit)
+function handleSubmit(event) {
+    event.preventDefault()
+    const form = new FormData(this)
+    $buttonMailto.setAttribute('href', `mailto:emanuelcebas074@gmail.com?subjet= nombre ${form.get('name')} asunto ${form.get('affair')} correo ${form.get('email')}&body=${form.get('message')}`)
+    $buttonMailto.click()
+}
+
+
 /*===== Boton y función ir arriba =====*/
 window.onscroll = function() {
     if (document.documentElement.scrollTop > 100) {
@@ -65,3 +78,4 @@ document.querySelector('.go-top-container').addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+

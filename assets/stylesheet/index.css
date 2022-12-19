@@ -916,6 +916,10 @@ footer {
     transform: translate(-50%, -50%) scale(1);
 }
 
+#mail{
+    opacity: 0;
+}
+
 @keyframes popup {
     0% {
         width: 0;
