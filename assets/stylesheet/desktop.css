@@ -52,6 +52,10 @@ div.btn {
 }
 
 .image_home {
+    max-width: 100%;
+    transition: .4s;
+    animation: image 2s;
+    border-radius: 50%;
     object-fit: contain;
 }
 
